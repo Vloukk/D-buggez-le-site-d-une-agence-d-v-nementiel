@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState } from "react";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 import "./style.scss";
 
@@ -49,6 +49,7 @@ const Select = ({
             </>
           )}
         </ul>
+        <label htmlFor="username">Username:</label>
         <input type="hidden" value={value || ""} name={name} />
         <button
           type="button"

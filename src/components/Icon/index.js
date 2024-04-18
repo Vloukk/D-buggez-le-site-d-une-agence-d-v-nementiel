@@ -1,5 +1,5 @@
 /* istanbul ignore file */
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Icon = ({ name }) => {
   let icon;
