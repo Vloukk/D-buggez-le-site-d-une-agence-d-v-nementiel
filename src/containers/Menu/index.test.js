@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
+import '@testing-library/jest-dom/extend-expect';
 import Menu from "./index";
 
 describe("When Menu is created", () => {

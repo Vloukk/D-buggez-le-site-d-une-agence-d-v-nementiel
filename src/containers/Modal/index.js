@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { useState } from "react";
 import Icon from "../../components/Icon";
 import "./style.scss";
@@ -14,6 +14,7 @@ const Modal = ({ opened, Content, children }) => {
             {Content}
             <button
               type="button"
+              aria-label="Close modal"
               data-testid="close-modal"
               onClick={() => setIsOpened(false)}
             >

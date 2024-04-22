@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import '@testing-library/jest-dom/extend-expect';
 import PeopleCard from "./index";
 
 describe("When a people card is created", () => {

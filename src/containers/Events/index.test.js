@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
+import '@testing-library/jest-dom/extend-expect';
 import { api, DataProvider } from "../../contexts/DataContext";
 import Events from "./index";
 
