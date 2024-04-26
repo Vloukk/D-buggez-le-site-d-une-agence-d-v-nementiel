@@ -45,7 +45,7 @@ const Slider = () => {
               {byDateDesc.map((_, radioIdx) => (
                 
                 <input
-                //  key={`${event.id}`}
+                  // key unique pour chaque radio
                   key={`${_.title}`}
                   type="radio"
                   name="radio-button"

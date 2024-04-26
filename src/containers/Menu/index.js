@@ -4,6 +4,16 @@ import Logo from "../../components/Logo";
 
 import "./style.scss";
 
+const scrollToContact = () => {
+  // Définissez la section "contact" comme destination
+  const contactSection = document.getElementById('contact');
+  // Assurez-vous que la section existe avant de faire défiler
+  if (contactSection) {
+    // Faites défiler vers la section "contact"
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Menu = () => (
   <nav>
     <Logo />
@@ -18,7 +28,7 @@ const Menu = () => (
         <a href="#notre-equipe">Notre équipe</a>
       </li>
     </ul>
-    <Button title="contact" onClick={() => (window.document.location.hash = "#contact")}>
+    <Button title="contact" onClick={scrollToContact}>
       Contact
     </Button>
   </nav>

@@ -99,7 +99,7 @@ const Page = () => {
           />
         </div>
       </section>
-      <div className="FormContainer">
+      <div className="FormContainer" id="contact">
         <h2 className="Title">Contact</h2>
         <Modal
           Content={
@@ -125,9 +125,11 @@ const Page = () => {
     <div className="col presta">
       <h3>Notre dernière prestation</h3>
       {last && (
+        // Ajout de Modal
         <Modal Content={< ModalEvent event={last} />}>
           {({ setIsOpened }) => (
             <EventCard
+            // Ajout de onClick pour afficher le modal
               onClick={() => setIsOpened(true)}
               imageSrc={last?.cover}
               title={last?.title}
