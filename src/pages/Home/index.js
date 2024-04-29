@@ -99,7 +99,7 @@ const Page = () => {
           />
         </div>
       </section>
-      <div className="FormContainer">
+      <div className="FormContainer" id="contact">
         <h2 className="Title">Contact</h2>
         <Modal
           Content={
