@@ -21,9 +21,6 @@
     "lint": "eslint .eslintrc.js ./src",
     "format": "prettier ./src --write"
   },
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
