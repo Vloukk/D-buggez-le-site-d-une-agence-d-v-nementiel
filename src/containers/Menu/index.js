@@ -22,6 +22,7 @@ const Menu = () => (
       Contact
     </Button>
   </nav>
+  
 );
 
 export default Menu;
